@@ -69,8 +69,8 @@ export const Home = () => {
    
   return (
    <>
-     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+     <Box sx={{ flexGrow: 1,marginBottom:"25px" }}>
+      <AppBar position="static" sx={{ bgcolor: "#f7f7f7",color:"black" }}>
      <Toolbar>
      <Typography
             variant="h6"
@@ -93,7 +93,7 @@ export const Home = () => {
      </Toolbar>
       </AppBar>
       </Box>
-      <Divider/>
+      
       <Box sx={{display:"flex",justifyContent:"space-between"}}>
         <Typography variant='h4'>Meetup Events</Typography>
         <Box sx={{ minWidth: 220 }}>
@@ -111,7 +111,7 @@ export const Home = () => {
       </FormControl>
     </Box>
       </Box>
-      <Box className="eventContainer" sx={{display:"flex",flexWrap:"wrap"}}>
+      <Box className="eventContainer" sx={{display:"flex",flexWrap:"wrap",justifyContent:"space-between"}}>
         {
             searchFilterData().map(EventData=>{
                

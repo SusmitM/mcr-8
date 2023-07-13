@@ -19,7 +19,7 @@ export const MeetupCard = ({EventData}) => {
 
   return (
     <>
-     <Card sx={{ maxWidth: 245,position: 'relative' }} onClick={()=>navigate(`/eventDetails/${id}`)}>
+     <Card sx={{ maxWidth: 245,position: 'relative',margin:"15px" }} onClick={()=>navigate(`/eventDetails/${id}`)}>
        
         <CardMedia
         sx={{ height: 140 }}
