@@ -1,10 +1,11 @@
 import {Box} from "@mui/material"
 import './App.css';
+import { AllRoutes } from "./Routes/AllRoutes";
 
 function App() {
   return (
     <div className="App">
-     <Box>Helloe</Box>
+    <AllRoutes/>
     </div>
   );
 }
